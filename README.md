@@ -1,8 +1,8 @@
-# Ionic Angular Tutorial
+# :zap: Ionic Angular Tutorial
 
 Code for Udemy Tutorial: [Ionic 4 - Build iOS, Android & Web Apps with Ionic & Angular](https://www.udemy.com/ionic-2-the-practical-guide-to-building-ios-android-apps/) using the [Ionic 5 framework](https://ionicframework.com/docs).
 
-## Table of contents
+## :page_facing_up: Table of contents
 
 * [General info](#general-info)
 * [Screenshots](#screenshots)
@@ -13,9 +13,7 @@ Code for Udemy Tutorial: [Ionic 4 - Build iOS, Android & Web Apps with Ionic & A
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
-## General info
-
-### Contains 31 sections
+## :books: General info - 31 sections
 
 **Section 1:** Getting Started:
 
@@ -55,23 +53,21 @@ Code for Udemy Tutorial: [Ionic 4 - Build iOS, Android & Web Apps with Ionic & A
 
 **Section 31:** Bonus Content:
 
-## Screenshots
+## :camera: Screenshots
 
 ![Ionic page](./img/.png)
 
-## Technologies
+## :signal_strength: Technologies
 
-* [Ionic v5.0.0](https://ionicframework.com/)
+* [Ionic v5](https://ionicframework.com/)
+* [Angular v7](https://angular.io/)
+* [Ionic/angular v4](https://www.npmjs.com/package/@ionic/angular)
 
-* [Angular v7.2.2](https://angular.io/)
-
-* [Ionic/angular v4.1.0](https://www.npmjs.com/package/@ionic/angular)
-
-## Setup
+## :floppy_disk: Setup
 
 * To start the server on _localhost://8100_ type: 'ionic serve'
 
-## Code Examples
+## :computer: Code Examples
 
 * Extract from `` .
 
@@ -79,21 +75,20 @@ Code for Udemy Tutorial: [Ionic 4 - Build iOS, Android & Web Apps with Ionic & A
 
 ```
 
-## Features
+## :cool: Features
 
 * f
 
-## Status & To-do list
+## :clipboard: Status & To-do list
 
-* Status: in work.
+* Status: in work
+* To-do: add comments etc.
 
-* To-do: complete course and document it.
-
-## Inspiration
+## :clap: Inspiration
 
 Project inspired by:
 [Ionic 4 - Build iOS, Android & Web Apps with Ionic & Angular](https://www.udemy.com/ionic-2-the-practical-guide-to-building-ios-android-apps/).
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
