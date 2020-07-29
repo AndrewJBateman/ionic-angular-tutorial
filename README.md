@@ -1,67 +1,35 @@
 # :zap: Ionic Angular Tutorial
 
-Code for Udemy Tutorial: [Ionic 4 - Build iOS, Android & Web Apps with Ionic & Angular](https://www.udemy.com/ionic-2-the-practical-guide-to-building-ios-android-apps/) using the [Ionic 5 framework](https://ionicframework.com/docs).
+* App to show a map view of user location using [Leaflet](https://leafletjs.com/) & the [Ionic 5 framework](https://ionicframework.com/docs).
 
 ## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Ionic Angular Tutorial](#zap-ionic-angular-tutorial)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-## :books: General info - 31 sections
+## :books: General info
 
-**Section 1:** Getting Started:
-
-**Section 2:** Angular Refresher: Components, Routing, Services etc. RxJS & Observables
-
-**Section 3:** Ionic Component Basics: Core Building Blocks, Components, Grid, Icons, Slots, CSS Utility Attributes, Validating User Input, Ionic Elements, Controller Components.
-
-**Section 4:** Angular & Ionic: Ionic Components, Angular Routes, Navigation, Ionic Controllers.
-
-**Section 5:** Building Native Apps with Capacitor: Intro, Creating & Running an Android App, Creating and Running an iOS app.
-
-**Section 6:** Debugging: Error Messages, DevTools, Debugging Android and iOS Apps.
-
-**Section 7:** Navigation & Routing in Ionic Apps: Routing, Ionic Tabs, Data & Services, Forward Navigation, Navigating with Toolbar Buttons, SideDRawer,Adding Links and Switching PagesAuth Guard, Model.
-
-**Section 8:** Ionic Compoonents Overview: Attributes & Slots, Ionic Grid, Ion-List v Ion-Grid,Ion-Text, Swipeable List Items,Virtual Scroppling, Image ELements, Spinner, Controller.
-
-**Section 9:** Styling & Theming Ionic Apps:
-
-**Section 10:** Handling User Input:
-
-**Section 11:** Managing State:
-
-**Section 12:** Sending Http Requests:
-
-**Section 13:** Adding Google Maps:
-
-**Section 14:** Using Native Device Features:
-
-**Section 15:** Adding Authentication:
-
-**Section 16:** Publishing the Apps:
-
-**Section 17:** Roundup:
-
-**Section 18-30:** Legacy - not covered
-
-**Section 31:** Bonus Content:
+* [Leaflet](https://leafletjs.com/) has lots of options for map control & user interaction
 
 ## :camera: Screenshots
 
-![Ionic page](./img/.png)
+![Ionic page](./img/map.png)
 
 ## :signal_strength: Technologies
 
 * [Ionic v5](https://ionicframework.com/)
-* [Angular v7](https://angular.io/)
-* [Ionic/angular v4](https://www.npmjs.com/package/@ionic/angular)
+* [Angular v10](https://angular.io/)
+* [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular)
+* [Leaflet v1.6](https://leafletjs.com/) open-source JavaScript library for mobile-friendly interactive maps
 
 ## :floppy_disk: Setup
 
@@ -69,25 +37,40 @@ Code for Udemy Tutorial: [Ionic 4 - Build iOS, Android & Web Apps with Ionic & A
 
 ## :computer: Code Examples
 
-* Extract from `` .
+* Basic setup to show the Eiffel Tower on a map
 
 ```typescript
+ngOnInit() {
+    this.map = L.map('map', {
+      // center on the coordinates for the eiffel tower
+      center: [48.858093, 2.294694],
+      zoom: 15,
+      renderer: L.canvas()
+    })
 
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(this.map)
+
+    setTimeout(() => {
+      this.map.invalidateSize();
+    }, 0)
+
+  }
 ```
 
 ## :cool: Features
 
-* f
+* free map
 
 ## :clipboard: Status & To-do list
 
-* Status: in work
-* To-do: add comments etc.
+* Status: Working
+* To-do: nothing
 
 ## :clap: Inspiration
 
-Project inspired by:
-[Ionic 4 - Build iOS, Android & Web Apps with Ionic & Angular](https://www.udemy.com/ionic-2-the-practical-guide-to-building-ios-android-apps/).
+* [Technbuzz: Add leaflet in Ionic Angular](https://www.youtube.com/watch?v=L-izDYEeJmA)]
 
 ## :envelope: Contact
 
