@@ -20,7 +20,7 @@
 ## :books: General info
 
 * [Leaflet](https://leafletjs.com/) has lots of options for map control & user interaction
-* [Leafket Marker](https://leafletjs.com/reference-1.7.1.html#marker) used to display clickable/draggable icons on the map
+* [Leaflet Marker](https://leafletjs.com/reference-1.7.1.html#marker) used to display clickable/draggable icons on the map
 
 ## :camera: Screenshots
 
@@ -66,7 +66,7 @@ ngOnInit() {
 
 ## :cool: Features
 
-* Map is free and does not require an API key.
+* Leaflet map is free and does not require an API key.
 * [Leaflet Marker bounce](https://github.com/maximeh/leaflet.bouncemarker) is definitely cool
 
 ## :clipboard: Status & To-do list
