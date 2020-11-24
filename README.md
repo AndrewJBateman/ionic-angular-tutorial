@@ -1,6 +1,7 @@
 # :zap: Ionic Angular Tutorial
 
 * App to show a map view of user location using [Leaflet](https://leafletjs.com/) & the [Ionic 5 framework](https://ionicframework.com/docs).
+* Tutorial code from [Technbuzz](https://www.youtube.com/channel/UCrG1x1CG8Jpjd2IZhrw9PsA)
 
 ## :page_facing_up: Table of contents
 
@@ -13,37 +14,41 @@
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
-  * [:clap: Inspiration](#clap-inspiration)
+  * [:clap: Inspiration - By Samiullah Khan @Techbuzz](#clap-inspiration---by-samiullah-khan-techbuzz)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
 * [Leaflet](https://leafletjs.com/) has lots of options for map control & user interaction
+* [Leafket Marker](https://leafletjs.com/reference-1.7.1.html#marker) used to display clickable/draggable icons on the map
 
 ## :camera: Screenshots
 
 ![Ionic page](./img/map.png)
+![Ionic page](./img/markers.png)
 
 ## :signal_strength: Technologies
 
 * [Ionic v5](https://ionicframework.com/)
-* [Angular v10](https://angular.io/)
+* [Angular v11](https://angular.io/)
 * [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular)
-* [Leaflet v1.6](https://leafletjs.com/) open-source JavaScript library for mobile-friendly interactive maps
+* [Leaflet v1.7.1](https://leafletjs.com/) free open-source JavaScript library for mobile-friendly interactive maps
+* [leaflet.bouncemarker v1.2](https://github.com/maximeh/leaflet.bouncemarker) to make a Marker bounce when you add it on a map
 
 ## :floppy_disk: Setup
 
+* Run `npm i` to install dependencies
 * To start the server on _localhost://8100_ type: 'ionic serve'
 
 ## :computer: Code Examples
 
-* Basic setup to show the Eiffel Tower on a map
+* Basic setup to show Big Ben on a map
 
 ```typescript
 ngOnInit() {
     this.map = L.map('map', {
       // center on the coordinates for the eiffel tower
-      center: [48.858093, 2.294694],
+      center: [51.5007, 0.1246],
       zoom: 15,
       renderer: L.canvas()
     })
@@ -61,16 +66,20 @@ ngOnInit() {
 
 ## :cool: Features
 
-* free map
+* Map is free and does not require an API key.
+* [Leaflet Marker bounce](https://github.com/maximeh/leaflet.bouncemarker) is definitely cool
 
 ## :clipboard: Status & To-do list
 
 * Status: Working
-* To-do: nothing
+* To-do: Nothing
 
-## :clap: Inspiration
+## :clap: Inspiration - By Samiullah Khan @Techbuzz
 
-* [Technbuzz: Add leaflet in Ionic Angular](https://www.youtube.com/watch?v=L-izDYEeJmA)]
+* [Youtube: Add leaflet in Ionic Angular](https://www.youtube.com/watch?v=L-izDYEeJmA)]
+* [Youtube: Leaflet markers, Popups and Circle](https://www.youtube.com/watch?v=gBSevKwI3GQ)
+* [Article: Add leaflet to Ionic Angular [Screencast]](https://www.technbuzz.com/2020/06/07/add-leaflet-to-ionic-angular/)
+* [Article: Markers, Popups & Circle](https://www.technbuzz.com/2020/06/28/add-leaflet-markers-popup-and-circle/)
 
 ## :envelope: Contact
 

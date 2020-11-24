@@ -1,34 +1,66 @@
 import { Component } from '@angular/core';
 
-import * as L from "Leaflet";
+import * as L from 'Leaflet';
+import 'leaflet.BounceMarker';
+
+import 'leaflet/dist/images/marker-shadow.png';
+import 'leaflet/dist/images/marker-icon.png';
+import 'leaflet/dist/images/marker-icon-2x.png';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+	selector: 'app-tab1',
+	templateUrl: 'tab1.page.html',
+	styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page {
+	map: L.Map;
 
-  map: L.Map
+	constructor() {}
 
-  constructor() {}
+	ngOnInit() {
+		this.map = L.map('map', {
+			// center on the coordinates for Big Ben
+			center: [51.50148, -0.12351],
+			zoom: 15,
+			renderer: L.canvas(),
+		});
 
-  ngOnInit() {
-    this.map = L.map('map', {
-      // center on the coordinates for the eiffel tower
-      center: [48.858093, 2.294694],
-      zoom: 15,
-      renderer: L.canvas()
-    })
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			attribution:
+				'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+		}).addTo(this.map);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(this.map)
+		this.addHomeMarker();
 
-    setTimeout(() => {
-      this.map.invalidateSize();
-    }, 0)
+		setTimeout(() => {
+			this.map.invalidateSize();
+		}, 0);
+	}
 
-  }
+	addHomeMarker() {
+		const homeMarker = L.marker({ lat: 51.50148, lng: -0.12351 });
+		// homeMarker.addTo(this.map);
+		homeMarker.bindPopup('This is the Home marker', {
+			closeButton: true,
+		});
 
+		L.circle(
+			{ lat: 51.50148, lng: -0.12351 },
+			{
+				color: 'steelblue',
+				radius: 500,
+				fillColor: 'steelblue',
+				opacity: 0.5,
+			}
+		).addTo(this.map);
+	}
+
+	addMarker() {
+		L.marker(
+			{ lat: 51.50148, lng: -0.12351 },
+      { draggable: true,
+        //@ts-ignore
+        bounceOnAdd: true }
+		).addTo(this.map);
+	}
 }

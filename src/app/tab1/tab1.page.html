@@ -1,11 +1,14 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+    <ion-title> Map </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="addMarker()">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div id="map"></div>
+	<div id="map"></div>
 </ion-content>
