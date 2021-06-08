@@ -2,6 +2,12 @@
 
 * App to show a map view of user location using [Leaflet](https://leafletjs.com/) & the [Ionic 5 framework](https://ionicframework.com/docs).
 * Tutorial code from [Technbuzz](https://www.youtube.com/channel/UCrG1x1CG8Jpjd2IZhrw9PsA)
+* **Note:** to open web links in a new window use: _ctrl+click on link_
+
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-tutorial?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/ionic-angular-tutorial?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/ionic-angular-tutorial?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/ionic-angular-tutorial?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -30,10 +36,10 @@
 ## :signal_strength: Technologies
 
 * [Ionic v5](https://ionicframework.com/)
-* [Angular v11](https://angular.io/)
+* [Angular v12](https://angular.io/)
 * [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular)
-* [Leaflet v1.7.1](https://leafletjs.com/) free open-source JavaScript library for mobile-friendly interactive maps
-* [leaflet.bouncemarker v1.2](https://github.com/maximeh/leaflet.bouncemarker) to make a Marker bounce when you add it on a map
+* [Leaflet v1](https://leafletjs.com/) free open-source JavaScript library for mobile-friendly interactive maps
+* [leaflet.bouncemarker v1](https://github.com/maximeh/leaflet.bouncemarker) to make a Marker bounce when you add it on a map
 
 ## :floppy_disk: Setup
 
