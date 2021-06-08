@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 import * as L from 'Leaflet';
 import 'leaflet.BounceMarker';
 
-import 'leaflet/dist/images/marker-shadow.png';
-import 'leaflet/dist/images/marker-icon.png';
-import 'leaflet/dist/images/marker-icon-2x.png';
+// import 'leaflet/dist/images/marker-shadow.png';
+// import 'leaflet/dist/images/marker-icon.png';
+// import 'leaflet/dist/images/marker-icon-2x.png';
 
 @Component({
 	selector: 'app-tab1',
