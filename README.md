@@ -21,6 +21,7 @@
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
   * [:clap: Inspiration - By Samiullah Khan @Techbuzz](#clap-inspiration---by-samiullah-khan-techbuzz)
+  * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
@@ -53,8 +54,8 @@
 ```typescript
 ngOnInit() {
     this.map = L.map('map', {
-      // center on the coordinates for the eiffel tower
-      center: [51.5007, 0.1246],
+      // center on the coordinates for Big Ben
+      center: [51.50148, -0.12351],
       zoom: 15,
       renderer: L.canvas()
     })
@@ -77,8 +78,8 @@ ngOnInit() {
 
 ## :clipboard: Status & To-do list
 
-* Status: Working
-* To-do: Nothing
+* Status: Working. Marker icons are commented out due to errors.
+* To-do: Fix marker icon issue.
 
 ## :clap: Inspiration - By Samiullah Khan @Techbuzz
 
@@ -87,6 +88,10 @@ ngOnInit() {
 * [Article: Add leaflet to Ionic Angular [Screencast]](https://www.technbuzz.com/2020/06/07/add-leaflet-to-ionic-angular/)
 * [Article: Markers, Popups & Circle](https://www.technbuzz.com/2020/06/28/add-leaflet-markers-popup-and-circle/)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
