@@ -1,7 +1,7 @@
 # :zap: Ionic Angular Tutorial
 
-* App to show a map view of user location using [Leaflet](https://leafletjs.com/) & the [Ionic 5 framework](https://ionicframework.com/docs).
-* Tutorial code from [Technbuzz](https://www.youtube.com/channel/UCrG1x1CG8Jpjd2IZhrw9PsA)
+* App to show a map view of user location with an animated marker using [Leaflet](https://leafletjs.com/), [Leaflet Bouncemaker v1](https://github.com/maximeh/leaflet.bouncemarker) & the [Ionic framework](https://ionicframework.com/docs).
+* Tutorial code from [Technbuzz](https://www.youtube.com/channel/UCrG1x1CG8Jpjd2IZhrw9PsA) with modifications
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-tutorial?style=plastic)
@@ -28,17 +28,20 @@
 
 * [Leaflet](https://leafletjs.com/) has lots of options for map control & user interaction
 * [Leaflet Marker](https://leafletjs.com/reference-1.7.1.html#marker) used to display clickable/draggable icons on the map
+* [Leaflet Bouncemaker v1](https://github.com/maximeh/leaflet.bouncemarker) used to add bounce animation to the marker
+* Angular no longer comes with linting by default so ESLint was added.
 
 ## :camera: Screenshots
 
-![Ionic page](./img/map.png)
-![Ionic page](./img/markers.png)
+![Ionic page](./imgs/map.png)
+![Ionic page](./imgs/marker.png)
 
 ## :signal_strength: Technologies
 
-* [Ionic v5](https://ionicframework.com/)
-* [Angular v12](https://angular.io/)
-* [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular)
+* [Ionic v6](https://ionicframework.com/)
+* [Angular v13](https://angular.io/)
+* [Ionic/angular v6](https://www.npmjs.com/package/@ionic/angular)
+* [Ionicons](https://ionic.io/ionicons)
 * [Leaflet v1](https://leafletjs.com/) free open-source JavaScript library for mobile-friendly interactive maps
 * [leaflet.bouncemarker v1](https://github.com/maximeh/leaflet.bouncemarker) to make a Marker bounce when you add it on a map
 
@@ -46,6 +49,7 @@
 
 * Run `npm i` to install dependencies
 * To start the server on _localhost://8100_ type: 'ionic serve'
+* `ng lint` to lint project - the Ionic boilerplate is old and newer version add `component` to tab component pages. This causes lint errors `error Component class names should end with one of these suffixes: "Component" (https://angular.io/styleguide#style-02-03) @angular-eslint/component-class-suffix`. This could be fixed with a lot of filename changes etc.
 
 ## :computer: Code Examples
 
@@ -78,8 +82,8 @@ ngOnInit() {
 
 ## :clipboard: Status & To-do list
 
-* Status: Working. Marker icons are commented out due to errors.
-* To-do: Fix marker icon issue.
+* Status: Working
+* To-do: Nothing
 
 ## :clap: Inspiration - By Samiullah Khan @Techbuzz
 
