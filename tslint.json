@@ -13,7 +13,7 @@
     "deprecation": {
       "severity": "warning"
     },
-    "component-class-suffix": [true, "Page", "Component"],
+    "component-class-suffix": [false, "Page", "Component"],
     "contextual-lifecycle": true,
     "directive-class-suffix": true,
     "directive-selector": [
