@@ -39,7 +39,7 @@
 ## :signal_strength: Technologies
 
 * [Ionic v6](https://ionicframework.com/)
-* [Angular v13](https://angular.io/)
+* [Angular v15](https://angular.io/)
 * [Ionic/angular v6](https://www.npmjs.com/package/@ionic/angular)
 * [Ionicons](https://ionic.io/ionicons)
 * [Leaflet v1](https://leafletjs.com/) free open-source JavaScript library for mobile-friendly interactive maps
@@ -98,4 +98,4 @@ ngOnInit() {
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@gmail.com
